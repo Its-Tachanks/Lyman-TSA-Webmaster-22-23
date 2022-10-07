@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <Link href="/about">Hi aaaaaaaaaaaaaaaaaaaa</Link>
-        <img src="./img/a.png" />
+        <Image src="/img/a.png" alt="L" width="100px" height="150px" />
       </main>
     </div>
   );
