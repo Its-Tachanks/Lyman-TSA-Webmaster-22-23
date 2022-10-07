@@ -12,6 +12,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <Link href="/about">Hi aaaaaaaaaaaaaaaaaaaa</Link>
+        <img src="./img/a.png" />
       </main>
     </div>
   );
