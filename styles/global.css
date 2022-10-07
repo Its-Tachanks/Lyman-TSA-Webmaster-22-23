@@ -1,8 +1,15 @@
 /* Variables */
 :root {
-  --color-primary: #008ad4;
-  --color-secondary: #1e5ce3;
-  --color-bg: #232323;
+  --true-blue: #0466c8ff;
+  --usafa-blue: #0353a4ff;
+  --dark-cornflower-blue: #023e7dff;
+  --oxford-blue: #002855ff;
+  --oxford-blue-2: #001845ff;
+  --oxford-blue-3: #001233ff;
+  --independence: #33415cff;
+  --black-coral: #5c677dff;
+  --roman-silver: #7d8597ff;
+  --manatee: #979dacff;
 }
 
 /* Below is a css reset. It fixes some common issues with cross-browser compatibility. */
