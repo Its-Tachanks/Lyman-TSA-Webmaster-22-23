@@ -22,6 +22,10 @@ main {
   padding: 0px;
 }
 
+.hidden {
+  display: none;
+}
+
 /* HTML5 hidden-attribute fix for newer browsers */
 *[hidden] {
   display: none;
