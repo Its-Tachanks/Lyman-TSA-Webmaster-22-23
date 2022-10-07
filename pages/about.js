@@ -19,7 +19,7 @@ export default function About() {
       </Head>
 
       {/* Main web content */}
-      <main className={styles.main}>
+      <main className={`${styles.main} ${styles.link}`}>
         <Navbar />
         <Link href="/">Hi jjjjjjjj</Link>
         <Image src="/img/a.png" alt="L" width="200px" height="350px" />

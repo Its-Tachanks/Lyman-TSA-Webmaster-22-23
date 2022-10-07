@@ -1,0 +1,28 @@
+/* Variables */
+:root {
+  --color-primary: #008ad4;
+  --color-secondary: #1e5ce3;
+  --color-bg: #232323;
+}
+
+/* Below is a css reset. It fixes some common issues with cross-browser compatibility. */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body,
+main {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
