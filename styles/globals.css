@@ -1,3 +1,14 @@
+/* Below is a css reset. It fixes some common issues with cross-browser compatibility. (Made by with copilot, very cool)*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 body {
   margin: 0px;
   padding: 0px;
