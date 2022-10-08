@@ -4,8 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 
-import { useRef, useState, Suspense } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import {
   OrbitControls,
   PerspectiveCamera,

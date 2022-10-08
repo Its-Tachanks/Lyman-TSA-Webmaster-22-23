@@ -5,6 +5,7 @@ import { Suspense, useRef } from "react";
 export default function Gun() {
   const gunModel = useGLTF("/models/Gun.glb");
   const gunRef = useRef();
+  gunModel;
   useFrame(() => (gunRef.current.rotation.y += 0.0035));
   useFrame(() => (gunRef.current.rotation.x += 0.005));
   gunModel.scene.scale.set(0.5, 0.5, 0.5);

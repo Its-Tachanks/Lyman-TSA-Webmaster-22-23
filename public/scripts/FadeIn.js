@@ -4,7 +4,6 @@ window.addEventListener("scroll", checkElements);
 window.addEventListener("load", checkElements);
 
 function checkElements() {
-  console.log("checkElements");
   var elements = document.querySelectorAll(".fadeIn");
   for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
