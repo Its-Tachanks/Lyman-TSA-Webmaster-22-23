@@ -8,40 +8,31 @@ import Script from "next/script";
 import styles from "../styles/Home.module.css";
 
 // Component imports
-import Navbar from "../components/Navbar";
+import ThreeHomeBg from "../components/HomeBg";
+import Footer from "../components/Footer";
 
 // Page
 export default function Home() {
   return (
-    <div className={`${styles.link} ${styles.container}`}>
+    <div>
       {/* Meta tags */}
       <Head>
         <title>test</title>
       </Head>
 
-      {/* Main web content */}
-      <main className={styles.main}>
-        <Navbar />
-        <Link href="/about">Hi aaaaaaaaaaaaaaaaaaaa</Link>
-        <Image src="/img/a.png" alt="L" width="100px" height="150px" />
-        <Script
-          src="https://coolors.co/palette-widget/widget.js"
-          data-id="06933927006541499"
-          onReady={() => {
-            new CoolorsPaletteWidget("06933927006541499", [
-              "0466c8",
-              "0353a4",
-              "023e7d",
-              "002855",
-              "001845",
-              "001233",
-              "33415c",
-              "5c677d",
-              "7d8597",
-              "979dac",
-            ]);
-          }}
-        ></Script>
+      {/* Main web content excluding navbar and footer */}
+      <ThreeHomeBg />
+
+      <main className="mainContent">
+        <div id={`${styles.homeTitleDiv}`} className="flex alignCenter">
+          <div>
+            <h1 id={`${styles.homeTitle}`}>Company Name</h1>
+            <h2 id={`${styles.homeSubtitle}`}>Inspirational motto</h2>
+            <Image src="/img/a.png" alt="L" width="100px" height="150px" />
+          </div>
+        </div>
+        <Link href="/about">Landing page content</Link>
+        <Footer />
       </main>
     </div>
   );

@@ -1,0 +1,7 @@
+#navbar {
+  background-color: rgba(165, 42, 42, 0);
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 70px;
+}
