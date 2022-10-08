@@ -24,7 +24,7 @@ export default function Home() {
       <ThreeHomeBg />
 
       <main className="mainContent">
-        <div id={`${styles.homeTitleDiv}`} className="flex alignCenter">
+        <div id={`${styles.homeTitleDiv}`} className="flex alignCenter fadeIn">
           <div>
             <h1 id={`${styles.homeTitle}`}>Company Name</h1>
             <h2 id={`${styles.homeSubtitle}`}>Inspirational motto</h2>

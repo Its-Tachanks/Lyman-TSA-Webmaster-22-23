@@ -16,6 +16,7 @@ export default function Layout({ children }) {
     <>
       {/* Webpage global layout */}
       <Navbar />
+      <Script src="/scripts/FadeIn.js" />
       {children}
     </>
   );

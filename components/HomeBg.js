@@ -45,13 +45,6 @@ export default function ThreeHomeBg() {
           fade
           speed={1}
         />
-        <Cloud
-          opacity={0.5}
-          speed={0.2} // Rotation speed
-          width={0.1} // Width of the full cloud
-          depth={0.5} // Z-dir depth
-          segments={2} // Number of particles
-        />
         <SpotLight
           distance={9}
           angle={0.4}
@@ -59,6 +52,14 @@ export default function ThreeHomeBg() {
           penumbra={0}
           anglePower={5} // Diffuse-cone anglePower (default: 5)
           position={[5, 2, -0.5]}
+        />
+        <SpotLight
+          distance={9}
+          angle={0.4}
+          attenuation={5}
+          penumbra={0}
+          anglePower={5} // Diffuse-cone anglePower (default: 5)
+          position={[-5, 2, -0.5]}
         />
       </Canvas>
     </section>

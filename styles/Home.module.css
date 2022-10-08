@@ -5,11 +5,3 @@
   text-align: center;
   overflow: hidden;
 }
-
-#homeTitle {
-  font-family: var(font-family-title);
-}
-
-#homeSubtitle {
-  font-family: var(font-family-subtitle);
-}

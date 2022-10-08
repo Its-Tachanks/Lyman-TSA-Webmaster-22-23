@@ -33,7 +33,7 @@
   --font-weight-small: 300;
   --font-weight-link: 600;
 
-  --font-family-title: "Aquire-Bold", sans-serif;
+  --font-family-title: "Aquire", sans-serif;
   --font-family-subtitle: "Roboto";
   --font-family-alttitle: "Roboto";
   --font-family-normal: "Roboto";
@@ -72,6 +72,15 @@ main {
 .alignCenter {
   justify-content: center;
   align-items: center;
+}
+
+.fadeIn {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.fadeIn.visible {
+  opacity: 1;
 }
 
 .mainContent {
