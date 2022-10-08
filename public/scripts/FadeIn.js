@@ -2,6 +2,8 @@
 window.addEventListener("scroll", checkElements);
 // window on load call check elements
 window.addEventListener("load", checkElements);
+// window on mouse move call check elements
+window.addEventListener("mousemove", checkElements);
 
 function checkElements() {
   var elements = document.querySelectorAll(".fadeIn");

@@ -32,7 +32,13 @@ export default function Home() {
       {progress === 100 ? (
         <>
           <Navbar />
-          <Script src="/scripts/FadeIn.js" />
+          <Script
+            src="/scripts/FadeIn.js"
+            onLoad={function () {
+              checkElements();
+              console.log("FadeIn.js loaded");
+            }}
+          />
           <main className="mainContent">
             <div
               id={`${styles.homeTitleDiv}`}
