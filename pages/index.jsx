@@ -6,14 +6,18 @@ import Script from "next/script";
 
 import { useProgress } from "@react-three/drei";
 
+import { useRef, useEffect } from "react";
+
 // CSS imports
 import styles from "../styles/Home.module.css";
 
 // Component imports
-import ThreeHomeBg from "../components/HomeBg";
-import Footer from "../components/Footer";
 import Preloader from "../components/Preloader";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import ThreeHomeBg from "../components/HomeComps/HomeBg";
+import AboutSection from "../components/HomeComps/AboutSection";
+import TitleSection from "../components/HomeComps/TitleSection";
 
 // Page
 export default function Home() {
@@ -27,29 +31,18 @@ export default function Home() {
         <title>test</title>
       </Head>
 
-      {/* Main web content excluding navbar and footer */}
+      {/* Main homepage content */}
       <ThreeHomeBg />
       {progress === 100 ? (
         <>
           <Navbar />
-          <Script
-            src="/scripts/FadeIn.js"
-            onLoad={function () {
-              checkElements();
-              console.log("FadeIn.js loaded");
-            }}
-          />
+          <Script src="/scripts/FadeIn.js" />
+          <Script src="/scripts/NavbarOpacity.js" />
+
+          {/* Page content you should touch */}
           <main className="mainContent">
-            <div
-              id={`${styles.homeTitleDiv}`}
-              className="flex alignCenter fadeIn"
-            >
-              <div>
-                <h1 id={`${styles.homeTitle}`}>Company Name</h1>
-                <h2 id={`${styles.homeSubtitle}`}>Inspirational motto</h2>
-                <Image src="/img/a.png" alt="L" width="100px" height="150px" />
-              </div>
-            </div>
+            <TitleSection />
+            <AboutSection />
             <Footer />
           </main>
         </>

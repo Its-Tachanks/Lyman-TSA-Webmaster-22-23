@@ -1,4 +1,9 @@
+// The order of css imports determines the order of css rules
+// The last imported css file has the highest priority
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
+
+// Layout component defining global components
 import Layout from "../components/layout.jsx";
 
 function MyApp({ Component, pageProps }) {

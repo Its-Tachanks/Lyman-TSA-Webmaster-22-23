@@ -16,11 +16,11 @@ import {
 } from "@react-three/drei";
 
 // Model imports
-import Planet from "./Models/Planet";
-import Gun from "./Models/Gun";
+import Planet from "../Models/Planet";
+import Gun from "../Models/Gun";
 
 // CSS imports
-import styles from "../styles/Components/HomeBg.module.css";
+import styles from "../../styles/Components/HomeStyles/HomeBg.module.css";
 
 // Page
 export default function ThreeHomeBg() {
