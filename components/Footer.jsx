@@ -11,11 +11,15 @@ import styles from "../styles/Components/Footer.module.css";
 // Page
 export default function Footer() {
   return (
-    <section id={`${styles.footer}`}>
+    <section id={`${styles.footer}`} className="container text-center">
       {/* Component content */}
-      <main className={styles.main}>
-        <p>This is the Footer component</p>
-      </main>
+      <div className="row border-top mt-4 py-3">
+        <div className={`${styles.footerCol} col`}>© SpaceX</div>
+        <div className={`${styles.footerCol} col`}>
+          <Image src="/img/a.png" width="40px" height="40px" alt="none"></Image>
+        </div>
+        <div className={`${styles.footerCol} col`}>Column</div>
+      </div>
     </section>
   );
 }

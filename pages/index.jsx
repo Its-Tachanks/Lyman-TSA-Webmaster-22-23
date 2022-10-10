@@ -37,13 +37,14 @@ export default function Home() {
         <>
           <Navbar />
           <Script src="/scripts/FadeIn.js" />
-          <Script src="/scripts/NavbarOpacity.js" />
 
           {/* Page content you should touch */}
           <main className="mainContent">
             <TitleSection />
-            <AboutSection />
-            <Footer />
+            <div id={`${styles.notTitle}`}>
+              <AboutSection />
+              <Footer />
+            </div>
           </main>
         </>
       ) : (
