@@ -18,7 +18,7 @@ export default function TitleSection() {
   return (
     <section
       id={`${styles.titleSection}`}
-      className="container-sm d-flex align-items-center w-100"
+      className="container-sm d-flex align-items-center w-100 fadeIn"
       ref={titleSectionRef}
     >
       <div className="row d-flex w-100">

@@ -25,7 +25,7 @@ export default function Home() {
   const { progress } = useProgress();
 
   return (
-    <div>
+    <>
       {/* Meta tags */}
       <Head>
         <title>test</title>
@@ -50,6 +50,6 @@ export default function Home() {
       ) : (
         <Preloader />
       )}
-    </div>
+    </>
   );
 }
