@@ -12,17 +12,19 @@ import styles from "../styles/About.module.css";
 // Page
 export default function About() {
   return (
-    <div>
+    <>
       {/* Meta tags */}
       <Head>
         <title>test</title>
       </Head>
 
       {/* Main web content excluding navbar and footer */}
-      <section className={`${styles.page}`}>
-        <Link href="/">About content</Link>
-        <Image src="/img/a.png" alt="L" width="100px" height="150px" />
+      <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ut a
+        aut pariatur maiores praesentium commodi, harum, reiciendis voluptatibus
+        quis labore doloribus excepturi provident quaerat animi possimus magni
+        illum debitis?
       </section>
-    </div>
+    </>
   );
 }
