@@ -23,7 +23,9 @@ export default function Footer() {
             alt="none"
           ></Image>
         </div>
-        <div className={`${styles.footerCol} col`}>Column</div>
+        <div className={`${styles.footerCol} col`}>
+          <Link href="/attributions">Attributions</Link>
+        </div>
       </div>
     </section>
   );

@@ -16,9 +16,18 @@ export default function AboutSection() {
   const aboutSectionRef = useRef();
 
   return (
-    <section id={`${styles.aboutSection}`} ref={aboutSectionRef}>
+    <section
+      id={`${styles.aboutSection}`}
+      ref={aboutSectionRef}
+      className="py-4"
+    >
       {/* Component content */}
-      <p>This is the AboutSection component</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+        consequatur inventore amet tempora accusamus culpa illo iste nostrum!
+        Numquam aperiam assumenda necessitatibus voluptatibus dolorum sequi
+        natus tempora amet saepe atque.
+      </p>
     </section>
   );
 }

@@ -28,14 +28,23 @@ export default function ThreeHomeBg() {
   return (
     <section id={`${styles.HomeBg}`}>
       {/* Component content */}
-      <Canvas>
+      <Canvas
+        onPointerOver={(e) => {
+          console.log("over");
+        }}
+      >
         <color attach="background" args={["#1f1f1f"]} />
-        <PerspectiveCamera makeDefault position={[0, 0, 5]} fov={90} />
+        <PerspectiveCamera
+          makeDefault
+          position={[1.8, -0.1, 2]}
+          fov={70}
+          rotation={[0, 0, 10]}
+        />
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
         <Astronaut />
         <OrbitControls />
-        <gridHelper />
+        {/*<gridHelper />*/}
         <Stars
           radius={100}
           depth={50}
@@ -44,22 +53,6 @@ export default function ThreeHomeBg() {
           saturation={0}
           fade
           speed={1}
-        />
-        <SpotLight
-          distance={9}
-          angle={0.4}
-          attenuation={5}
-          penumbra={0}
-          anglePower={5} // Diffuse-cone anglePower (default: 5)
-          position={[5, 2, -0.5]}
-        />
-        <SpotLight
-          distance={9}
-          angle={0.4}
-          attenuation={5}
-          penumbra={0}
-          anglePower={5} // Diffuse-cone anglePower (default: 5)
-          position={[-5, 2, -0.5]}
         />
       </Canvas>
     </section>
