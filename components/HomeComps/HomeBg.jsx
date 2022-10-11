@@ -36,7 +36,7 @@ export default function ThreeHomeBg() {
         <color attach="background" args={["#1f1f1f"]} />
         <PerspectiveCamera
           makeDefault
-          position={[1.8, -0.1, 2]}
+          position={[1.5, -0.1, 2]}
           fov={70}
           rotation={[0, 0, 10]}
         />

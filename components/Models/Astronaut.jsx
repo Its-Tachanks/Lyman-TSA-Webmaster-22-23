@@ -7,7 +7,7 @@ export default function Astronaut() {
   const astronautRef = useRef();
   var thing = 0;
   useFrame(
-    () => (astronautRef.current.rotation.z = Math.sin((thing += 0.006)))
+    () => (astronautRef.current.rotation.z = Math.sin((thing += 0.006)) / 10)
   );
   astronautModel.scene.scale.set(0.6, 0.6, 0.6);
   astronautModel.scene.position.set(1.2, -1, 0);
