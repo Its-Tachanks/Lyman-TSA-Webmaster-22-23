@@ -15,18 +15,28 @@ import styles from "../styles/Components/Navbar.module.css";
 export default function Navbar() {
   const navbarRef = useRef();
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      console.log(document.body.getBoundingClientRect().top);
+      document.body.getBoundingClientRect().top <= -100
+        ? navbarRef.current.classList.add(`${styles.navBg}`)
+        : navbarRef.current.classList.remove(`${styles.navBg}`);
+    });
+  }, []);
+
   return (
     <nav
-      class="navbar navbar-dark bg-dark position-fixed"
+      className="navbar navbar-dark position-fixed"
       aria-label="First navbar example"
       id={`${styles.navbar}`}
+      ref={navbarRef}
     >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">
           This doesnt work no touvchy
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarsExample01"
@@ -34,46 +44,46 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExample01">
-          <ul class="navbar-nav me-auto mb-2">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+        <div className="collapse navbar-collapse" id="navbarsExample01">
+          <ul className="navbar-nav me-auto mb-2">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">
                 Home
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Link
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+            <li className="nav-item">
+              <a className="nav-link disabled">Disabled</a>
             </li>
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
                 href="#"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Dropdown
               </a>
-              <ul class="dropdown-menu">
+              <ul className="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Something else here
                   </a>
                 </li>
@@ -82,7 +92,7 @@ export default function Navbar() {
           </ul>
           <form role="search">
             <input
-              class="form-control"
+              className="form-control"
               type="search"
               placeholder="Search"
               aria-label="Search"
