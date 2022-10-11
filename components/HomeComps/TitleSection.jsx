@@ -18,16 +18,16 @@ export default function TitleSection() {
   return (
     <section
       id={`${styles.titleSection}`}
-      className=" container-sm text-left"
+      className="container-sm d-flex align-items-center w-100"
       ref={titleSectionRef}
     >
-      <div className="row  d-flex">
+      <div className="row d-flex w-100">
         <div className="col-sm">
           <h1 id={`${styles.homeTitle}`}>Company Name</h1>
           <h2 id={`${styles.homeSubtitle}`}>Inspirational motto</h2>
-          <Image src="/img/a.png" alt="L" width="100px" height="150px" />
+          <Image src="/img/logo.png" alt="L" width="150px" height="150px" />
         </div>
-        <div className="col-sm pl-2">
+        <div className="col-sm">
           <></>
         </div>
       </div>

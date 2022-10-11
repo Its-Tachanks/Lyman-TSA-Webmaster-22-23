@@ -18,6 +18,7 @@ import {
 // Model imports
 import Planet from "../Models/Planet";
 import Gun from "../Models/Gun";
+import Astronaut from "../Models/Astronaut";
 
 // CSS imports
 import styles from "../../styles/Components/HomeStyles/HomeBg.module.css";
@@ -32,7 +33,7 @@ export default function ThreeHomeBg() {
         <PerspectiveCamera makeDefault position={[0, 0, 5]} fov={90} />
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
-        <Gun />
+        <Astronaut />
         <OrbitControls />
         <gridHelper />
         <Stars

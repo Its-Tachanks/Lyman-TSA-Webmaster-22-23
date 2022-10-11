@@ -16,7 +16,12 @@ export default function Footer() {
       <div className="row border-top mt-4 py-3">
         <div className={`${styles.footerCol} col`}>© SpaceX</div>
         <div className={`${styles.footerCol} col`}>
-          <Image src="/img/a.png" width="40px" height="40px" alt="none"></Image>
+          <Image
+            src="/img/star.png"
+            width="40px"
+            height="40px"
+            alt="none"
+          ></Image>
         </div>
         <div className={`${styles.footerCol} col`}>Column</div>
       </div>
