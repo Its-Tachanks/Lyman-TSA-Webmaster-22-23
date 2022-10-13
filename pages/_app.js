@@ -13,10 +13,6 @@ function MyApp({ Component, pageProps }) {
     // Inside the layout is the corresponding page
     // Layout applies any components that are common to all pages
     <>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <Layout>
         <Component {...pageProps} />
       </Layout>

@@ -15,6 +15,10 @@ import Preloader from "./Preloader";
 export default function Layout({ children }) {
   return (
     <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       {/* Webpage global layout */}
       {children}
     </>
