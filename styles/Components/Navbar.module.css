@@ -12,13 +12,13 @@
 /* This is really bad practice, but I'm not sure how to fix it */
 #navbar:hover {
   animation: fadeBackground 0.2s ease-in-out;
-  background-color: #1c37d4;
+  background-color: #3e307e;
 }
 @keyframes fadeBackground {
   from {
     background-color: rgba(62, 48, 126, 0);
   }
   to {
-    background-color: #1c37d4;
+    background-color: #3e307e;
   }
 }

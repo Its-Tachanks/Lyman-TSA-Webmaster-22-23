@@ -17,7 +17,7 @@ export default function Navbar() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log(document.body.getBoundingClientRect().top);
+      //console.log(document.body.getBoundingClientRect().top);
       document.body.getBoundingClientRect().top <= -100
         ? navbarRef.current.classList.add(`${styles.navBg}`)
         : navbarRef.current.classList.remove(`${styles.navBg}`);

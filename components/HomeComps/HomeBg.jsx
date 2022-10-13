@@ -13,12 +13,16 @@ import {
   Cloud,
   Sky,
   SpotLight,
+  CameraShake,
 } from "@react-three/drei";
 
+// Other imports
+import MainCamera from "../ThreeJS/MainCamera";
+
 // Model imports
-import Planet from "../Models/Planet";
-import Gun from "../Models/Gun";
-import Astronaut from "../Models/Astronaut";
+import Planet from "../ThreeJS/Planet";
+import Gun from "../ThreeJS/Gun";
+import Astronaut from "../ThreeJS/Astronaut";
 
 // CSS imports
 import styles from "../../styles/Components/HomeStyles/HomeBg.module.css";
@@ -34,17 +38,12 @@ export default function ThreeHomeBg() {
         }}
       >
         <color attach="background" args={["#1f1f1f"]} />
-        <PerspectiveCamera
-          makeDefault
-          position={[1.5, -0.1, 2]}
-          fov={70}
-          rotation={[0, 0, 10]}
-        />
+        <MainCamera />
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
         <Astronaut />
         <OrbitControls />
-        {/*<gridHelper />*/}
+        <gridHelper />
         <Stars
           radius={100}
           depth={50}

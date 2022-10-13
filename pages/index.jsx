@@ -29,6 +29,7 @@ export default function Home() {
       {/* Meta tags */}
       <Head>
         <title>test</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* Main homepage content */}

@@ -3,6 +3,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
 
+import Head from "next/head";
+
 // Layout component defining global components
 import Layout from "../components/layout.jsx";
 
@@ -10,9 +12,15 @@ function MyApp({ Component, pageProps }) {
   return (
     // Inside the layout is the corresponding page
     // Layout applies any components that are common to all pages
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 }
 
