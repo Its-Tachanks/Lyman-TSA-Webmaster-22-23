@@ -2,7 +2,7 @@ import { PerspectiveCamera } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 
-export default function MainCamera() {
+export default function MainCamera(props) {
   const camRef = useRef();
   /*
   ? Failed attempt at making the camera shake
@@ -27,9 +27,9 @@ export default function MainCamera() {
   return (
     <PerspectiveCamera
       makeDefault
-      position={[1.5, -0.1, 2]}
+      position={[props.pos[0], props.pos[1], props.pos[2]]}
       fov={70}
-      rotation={[1.5, 0, 0]}
+      rotation={[props.rot[0], props.rot[1], props.rot[2]]}
       ref={camRef}
     />
   );

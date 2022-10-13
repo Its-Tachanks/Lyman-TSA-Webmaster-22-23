@@ -38,9 +38,19 @@ export default function ThreeHomeBg() {
         }}
       >
         <color attach="background" args={["#1f1f1f"]} />
-        <MainCamera />
+        <MainCamera pos={[1, -0.1, 2]} rot={[1.5, 0, 0]} />
         <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} />
+        <pointLight position={[15, 10, 10]} />
+        <CameraShake
+          maxYaw={0.02}
+          maxPitch={0.03}
+          maxRoll={0.02}
+          decay={false}
+          intensity={1}
+          yawFrequency={0.1}
+          pitchFrequency={0.1}
+          rollFrequency={0.1}
+        />
         <Astronaut />
         <OrbitControls />
         <gridHelper />

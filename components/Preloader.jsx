@@ -9,13 +9,13 @@ import styles from "../styles/Components/Preloader.module.css";
 // Component imports
 
 // Page
-export default function Preloader() {
+export default function Preloader(props) {
   return (
     <section id={`${styles.preloader}`}>
       {/* Component content */}
       <main className="flex alignCenter" id={`${styles.preloaderContainer}`}>
         <div>
-          <h2 id={`${styles.loadingText}`}>Loading</h2>
+          <h2 id={`${styles.loadingText}`}>{props.text}</h2>
           <div className={`${styles.line}`}></div>
         </div>
       </main>

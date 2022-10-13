@@ -57,5 +57,6 @@
   display: block;
   height: 50px;
   width: 150px;
-  border-radius: 2px;
+
+  border-radius: 8px;
 }

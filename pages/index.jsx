@@ -6,7 +6,7 @@ import Script from "next/script";
 
 import { useProgress } from "@react-three/drei";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, Suspense } from "react";
 
 // CSS imports
 import styles from "../styles/Home.module.css";
@@ -33,24 +33,26 @@ export default function Home() {
       </Head>
 
       {/* Main homepage content */}
-      <ThreeHomeBg />
-      {progress === 100 ? (
-        <>
-          <Navbar />
-          <Script src="/scripts/FadeIn.js" />
+      <Suspense fallback={<Preloader text="Loading page..." />}>
+        <ThreeHomeBg />
+        {progress === 100 ? (
+          <>
+            <Navbar />
+            <Script src="/scripts/FadeIn.js" />
 
-          {/* Page content you should touch */}
-          <main className="mainContent">
-            <TitleSection />
-            <div id={`${styles.notTitle}`}>
-              <AboutSection />
-              <Footer />
-            </div>
-          </main>
-        </>
-      ) : (
-        <Preloader />
-      )}
+            {/* Page content you should touch */}
+            <main className="mainContent">
+              <TitleSection />
+              <div id={`${styles.notTitle}`}>
+                <AboutSection />
+                <Footer />
+              </div>
+            </main>
+          </>
+        ) : (
+          <Preloader text="Loading assets..." />
+        )}
+      </Suspense>
     </>
   );
 }
