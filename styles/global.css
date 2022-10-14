@@ -63,6 +63,10 @@ main {
   font-family: var(--font-family-normal);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .hidden {
   display: none;
 }
