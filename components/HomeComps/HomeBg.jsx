@@ -37,7 +37,7 @@ export default function ThreeHomeBg() {
           console.log("over");
         }}
       >
-        <color attach="background" args={["#1f1f1f"]} />
+        {/*<color attach="background" args={["red"]} />*/}
         <MainCamera pos={[1, -0.1, 2]} rot={[1.5, 0, 0]} />
         <ambientLight intensity={0.5} />
         <pointLight position={[15, 10, 10]} />
