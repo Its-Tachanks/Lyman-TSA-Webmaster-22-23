@@ -43,10 +43,8 @@ export default function Home() {
             {/* Page content you should touch */}
             <main className="mainContent">
               <TitleSection />
-              <div id={`${styles.notTitle}`}>
-                <AboutSection />
-                <Footer />
-              </div>
+              <AboutSection />
+              <Footer />
             </main>
           </>
         ) : (
