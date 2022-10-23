@@ -5,7 +5,7 @@ import Image from "next/image";
 import Script from "next/script";
 
 // CSS imports
-import styles from "../styles/About.module.css";
+import styles from "../styles/pages/About.module.css";
 
 // Component imports
 
