@@ -4,12 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 // CSS imports
-import styles from "../styles/Components/Footer.module.css";
+import styles from "../../styles/parts/Footer.module.css";
 
 // Component imports
 
 // Page
-export default function Footer() {
+export default function Footer(props) {
   return (
     <section id={`${styles.footer}`} className="container text-center">
       {/* Component content */}

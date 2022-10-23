@@ -10,7 +10,7 @@ import styles from "../styles/About.module.css";
 // Component imports
 
 // Page
-export default function About() {
+export default function Attributions() {
   return (
     <>
       {/* Meta tags */}

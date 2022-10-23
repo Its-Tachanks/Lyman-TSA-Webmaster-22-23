@@ -3,10 +3,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
 
-import Head from "next/head";
-
 // Layout component defining global components
-import Layout from "../components/layout.jsx";
+import Layout from "../components/_layout.jsx";
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 // CSS imports
-import styles from "../styles/Components/Preloader.module.css";
+import styles from "../../styles/parts/Preloader.module.css";
 
 // Component imports
 

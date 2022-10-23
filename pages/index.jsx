@@ -9,15 +9,13 @@ import { useProgress } from "@react-three/drei";
 import { useRef, useEffect, Suspense } from "react";
 
 // CSS imports
-import styles from "../styles/Home.module.css";
+import styles from "../styles/pages/Home.module.css";
 
 // Component imports
-import Preloader from "../components/Preloader";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import ThreeHomeBg from "../components/HomeComps/HomeBg";
-import AboutSection from "../components/HomeComps/AboutSection";
-import TitleSection from "../components/HomeComps/TitleSection";
+import Navbar from "../components/parts/Navbar";
+import Footer from "../components/parts/Footer";
+import HeroImg from "../components/templates/HeroImg";
+import CenterHero from "../components/templates/CenterHero";
 
 // Page
 export default function Home() {
@@ -32,25 +30,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Main homepage content */}
-      <Suspense fallback={<Preloader text="Loading page..." />}>
-        <ThreeHomeBg />
-        {progress === 100 ? (
-          <>
-            <Navbar />
-            <Script src="/scripts/FadeIn.js" />
+      {/* ! Main homepage content */}
+      <main>
+        <Script src="/scripts/FadeIn.js" />
 
-            {/* Page content you should touch */}
-            <main className="mainContent">
-              <TitleSection />
-              <AboutSection />
-              <Footer />
-            </main>
-          </>
-        ) : (
-          <Preloader text="Loading assets..." />
-        )}
-      </Suspense>
+        <Navbar />
+        <HeroImg txtSide="left"></HeroImg>
+        <Footer />
+      </main>
     </>
   );
 }
