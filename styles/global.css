@@ -124,32 +124,4 @@ a {
   font-family: var(--font-family-link);
   color: var(--font-color-link);
   text-decoration: none;
-
-  transition: transform 0.2s ease;
-}
-
-a:hover {
-  color: red;
-  text-decoration: none;
-  animation: testy 1s;
-  animation-delay: 0.1s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes testy {
-  0% {
-    transform: scale(1) rotate(0deg);
-    background-image: url("https://i.pinimg.com/originals/17/5b/89/175b8996df8378e1942b78cf62c20bcc.png");
-    background-size: 100% 100%;
-  }
-  50% {
-    transform: scale(10) rotate(180deg);
-    background-image: url("https://i.pinimg.com/originals/17/5b/89/175b8996df8378e1942b78cf62c20bcc.png");
-    background-size: 100% 100%;
-  }
-  100% {
-    transform: scale(1) rotate(360deg);
-    background-image: url("https://i.pinimg.com/originals/17/5b/89/175b8996df8378e1942b78cf62c20bcc.png");
-    background-size: 100% 100%;
-  }
 }

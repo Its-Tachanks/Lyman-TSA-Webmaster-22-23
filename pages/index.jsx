@@ -12,10 +12,7 @@ import { useRef, useEffect, Suspense } from "react";
 import styles from "../styles/pages/Home.module.css";
 
 // Component imports
-import Navbar from "../components/parts/Navbar";
-import Footer from "../components/parts/Footer";
 import HeroImg from "../components/templates/HeroImg";
-import CenterHero from "../components/templates/CenterHero";
 
 // Page
 export default function Home() {
@@ -31,12 +28,22 @@ export default function Home() {
       </Head>
 
       {/* ! Main homepage content */}
+      <Script src="/scripts/FadeIn.js" />
       <main>
-        <Script src="/scripts/FadeIn.js" />
-
-        <Navbar />
-        <HeroImg txtSide="left"></HeroImg>
-        <Footer />
+        <HeroImg
+          flipped="false"
+          header="One"
+          text="Lorem stuff 1"
+          image="/img/a.png"
+          imageAlt="Image 1"
+        />
+        <HeroImg
+          flipped="true"
+          header="Two"
+          text="Lorem stuff 2"
+          image="/img/a.png"
+          imageAlt="Image 2"
+        />
       </main>
     </>
   );
