@@ -28,7 +28,6 @@ export default function Home() {
       </Head>
 
       {/* ! Main homepage content */}
-      <Script src="/scripts/FadeIn.js" />
       <main>
         <HeroImg
           flipped="false"
@@ -36,7 +35,7 @@ export default function Home() {
           text="Lorem stuff 1"
           image="/img/a.gif"
           imageAlt="Image 1"
-          fade="true"
+          loadAnim="swipeFromLeft"
         />
         <HeroImg
           flipped="true"
@@ -44,7 +43,7 @@ export default function Home() {
           text="Lorem stuff 2"
           image="/img/b.gif"
           imageAlt="Image 2"
-          fade="true"
+          loadAnim="swipeFromRight"
         />
       </main>
     </>

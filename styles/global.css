@@ -82,6 +82,24 @@ html {
   opacity: 1;
 }
 
+.swipeFromLeft {
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.swipeFromLeft.visible {
+  transform: translateX(0);
+}
+
+.swipeFromRight {
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.swipeFromRight.visible {
+  transform: translateX(0);
+}
+
 @font-face {
   font-family: Aquire;
   src: url("/fonts/Aquire.otf") format("opentype");

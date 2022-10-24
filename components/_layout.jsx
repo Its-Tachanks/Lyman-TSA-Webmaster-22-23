@@ -26,6 +26,8 @@ export default function Layout({ children }) {
           src="https://kit.fontawesome.com/8ee8b8ceb7.js"
           crossorigin="anonymous"
         ></Script>
+        <Script src="/scripts/LoadEffect.js" />
+
         <Navbar />
         {children}
         <Footer />

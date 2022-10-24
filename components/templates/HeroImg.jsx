@@ -14,9 +14,7 @@ export default function HeroImg(props) {
   return (
     <section>
       <div
-        className={`container-sm px-4 py-5 mw-100 bg-success ${
-          props.fade === "true" ? "fadeIn" : ""
-        }`}
+        className={`container-sm px-4 py-5 mw-100 bg-success ${props.loadAnim}`}
       >
         <div
           className={`row align-items-center ${
