@@ -36,6 +36,7 @@ export default function Home() {
           text="Lorem stuff 1"
           image="/img/a.png"
           imageAlt="Image 1"
+          fade="true"
         />
         <HeroImg
           flipped="true"
@@ -43,6 +44,7 @@ export default function Home() {
           text="Lorem stuff 2"
           image="/img/a.png"
           imageAlt="Image 2"
+          fade="true"
         />
       </main>
     </>
