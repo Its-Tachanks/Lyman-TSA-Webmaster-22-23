@@ -34,19 +34,27 @@ export default function Navbar(props) {
       <div
         className={`container-fluid d-flex justify-content-center align-items-center ${styles.navbarContainer}`}
       >
-        <i className="fa-solid fa-bolt"></i>
-      </div>
-      <div
-        className={`container-fluid d-flex justify-content-center align-items-center ${styles.navbarContainer}`}
-      >
-        <i className="fa-sharp fa-solid fa-mug-hot"></i>
+        <Tooltip title="test" leaveDelay={100}>
+          <IconButton sx={{ color: "var(--icon-color)" }}>
+            <i className="fa-solid fa-bolt"></i>
+          </IconButton>
+        </Tooltip>
       </div>
       <div
         className={`container-fluid d-flex justify-content-center align-items-center ${styles.navbarContainer}`}
       >
         <Tooltip title="test" leaveDelay={100}>
           <IconButton sx={{ color: "var(--icon-color)" }}>
-            <i className="fa-solid fa-bolt"></i>
+            <i className="fa-sharp fa-solid fa-mug-hot"></i>
+          </IconButton>
+        </Tooltip>
+      </div>
+      <div
+        className={`container-fluid d-flex justify-content-center align-items-center ${styles.navbarContainer}`}
+      >
+        <Tooltip title="test" leaveDelay={100}>
+          <IconButton sx={{ color: "var(--icon-color)" }}>
+            <i className="fa-brands fa-docker"></i>
           </IconButton>
         </Tooltip>
       </div>
