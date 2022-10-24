@@ -21,7 +21,7 @@ export default function About() {
       {/* Main web content excluding navbar and footer */}
       <section>
         <Link href="/">About content</Link>
-        <Image src="/img/a.png" alt="L" width="100px" height="150px" />
+        <Image src="/img/a.gif" alt="L" width="100px" height="150px" />
       </section>
     </>
   );

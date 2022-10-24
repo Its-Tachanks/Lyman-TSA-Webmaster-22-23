@@ -34,14 +34,14 @@ export default function Home() {
           flipped="false"
           header="One"
           text="Lorem stuff 1"
-          image="/img/a.png"
+          image="/img/a.gif"
           imageAlt="Image 1"
         />
         <HeroImg
           flipped="true"
           header="Two"
           text="Lorem stuff 2"
-          image="/img/a.png"
+          image="/img/b.gif"
           imageAlt="Image 2"
         />
       </main>
