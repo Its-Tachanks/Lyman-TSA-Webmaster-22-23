@@ -41,6 +41,8 @@
   --font-family-link: "Roboto";
 
   --loader-color: #0466c8;
+
+  --icon-color: #ff0000;
 }
 
 /* Below is a css reset. It fixes some common issues with cross-browser compatibility. */
