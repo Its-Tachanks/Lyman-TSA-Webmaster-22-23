@@ -35,7 +35,7 @@ export default function Home() {
           text="Lorem stuff 1"
           image="/img/a.gif"
           imageAlt="Image 1"
-          loadAnim="swipeFromLeft"
+          loadAnim=""
         />
         <HeroImg
           flipped="true"
@@ -43,7 +43,23 @@ export default function Home() {
           text="Lorem stuff 2"
           image="/img/b.gif"
           imageAlt="Image 2"
+          loadAnim=""
+        />
+        <HeroImg
+          flipped="false"
+          header="One"
+          text="Lorem stuff 1"
+          image="/img/a.gif"
+          imageAlt="Image 1"
           loadAnim="swipeFromRight"
+        />
+        <HeroImg
+          flipped="true"
+          header="One"
+          text="Lorem stuff 1"
+          image="/img/a.gif"
+          imageAlt="Image 1"
+          loadAnim="swipeFromLeft"
         />
       </main>
     </>
