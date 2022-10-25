@@ -11,7 +11,7 @@
   --roman-silver: #7d8597;
   --manatee: #979dac;
 
-  --bg-color-primary: #001233;
+  --bg-color-primary: #1c1c1c;
 
   --font-color-title: #ededed;
   --font-color-subtitle: #e5e5e5;
@@ -63,6 +63,8 @@ main {
   padding: 0px;
   box-sizing: border-box;
   font-family: var(--font-family-normal);
+
+  background-color: var(--bg-color-primary);
 }
 
 html {
@@ -83,7 +85,7 @@ html {
 }
 
 .swipeFromLeft {
-  transform: translateX(-100%);
+  transform: translateX(-100vw);
   transition: all 1s;
 }
 
@@ -92,7 +94,7 @@ html {
 }
 
 .swipeFromRight {
-  transform: translateX(100%);
+  transform: translateX(100vw);
   transition: all 1s;
 }
 

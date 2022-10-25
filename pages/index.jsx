@@ -12,7 +12,9 @@ import { useRef, useEffect, Suspense } from "react";
 import styles from "../styles/pages/Home.module.css";
 
 // Component imports
-import HeroImg from "../components/templates/HeroImg";
+import TwoColumnHero from "../components/templates/TwoColumnHero";
+import HeroImg from "../components/templates/heroParts/HeroImg";
+import HeroText from "../components/templates/heroParts/HeroText";
 
 // Page
 export default function Home() {
@@ -29,38 +31,22 @@ export default function Home() {
 
       {/* ! Main homepage content */}
       <main>
-        <HeroImg
-          flipped="false"
-          header="One"
-          text="Lorem stuff 1"
-          image="https://picsum.photos/200/200"
-          imageAlt="Image 1"
-          loadAnim=""
-        />
-        <HeroImg
-          flipped="true"
-          header="Two"
-          text="Lorem stuff 2"
-          image="https://picsum.photos/200/200"
-          imageAlt="Image 2"
-          loadAnim=""
-        />
-        <HeroImg
-          flipped="false"
-          header="One"
-          text="Lorem stuff 1"
-          image="https://picsum.photos/200/200"
-          imageAlt="Image 1"
-          loadAnim="swipeFromRight"
-        />
-        <HeroImg
-          flipped="true"
-          header="One"
-          text="Lorem stuff 1"
-          image="https://picsum.photos/200/200"
-          imageAlt="Image 1"
-          loadAnim="swipeFromLeft"
-        />
+        <TwoColumnHero flipped="false">
+          <HeroImg
+            image="https://picsum.photos/200/200"
+            imageAlt="Image 1"
+            loadAnim="swipeFromLeft"
+          />
+          <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
+        </TwoColumnHero>
+        <TwoColumnHero flipped="true">
+          <HeroImg
+            image="https://picsum.photos/200/200"
+            imageAlt="Image 1"
+            loadAnim="swipeFromRight"
+          />
+          <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
+        </TwoColumnHero>
       </main>
     </>
   );

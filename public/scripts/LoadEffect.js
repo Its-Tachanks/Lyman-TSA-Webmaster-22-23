@@ -1,5 +1,4 @@
 function checkElements() {
-  console.log("checkElements");
   var elements = document.querySelectorAll(
     ".fadeIn, .swipeFromLeft, .swipeFromRight"
   );
