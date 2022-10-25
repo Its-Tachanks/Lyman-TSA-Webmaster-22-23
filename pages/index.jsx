@@ -33,7 +33,7 @@ export default function Home() {
           flipped="false"
           header="One"
           text="Lorem stuff 1"
-          image="/img/a.gif"
+          image="https://picsum.photos/200/200"
           imageAlt="Image 1"
           loadAnim=""
         />
@@ -41,7 +41,7 @@ export default function Home() {
           flipped="true"
           header="Two"
           text="Lorem stuff 2"
-          image="/img/b.gif"
+          image="https://picsum.photos/200/200"
           imageAlt="Image 2"
           loadAnim=""
         />
@@ -49,7 +49,7 @@ export default function Home() {
           flipped="false"
           header="One"
           text="Lorem stuff 1"
-          image="/img/a.gif"
+          image="https://picsum.photos/200/200"
           imageAlt="Image 1"
           loadAnim="swipeFromRight"
         />
@@ -57,7 +57,7 @@ export default function Home() {
           flipped="true"
           header="One"
           text="Lorem stuff 1"
-          image="/img/a.gif"
+          image="https://picsum.photos/200/200"
           imageAlt="Image 1"
           loadAnim="swipeFromLeft"
         />
