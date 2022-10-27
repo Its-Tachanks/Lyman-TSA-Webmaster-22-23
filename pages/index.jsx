@@ -38,20 +38,20 @@ export default function Home() {
           <p>😘😍😍😎😎😋😋😊😎😎😎😎🙂🙂🙄😶😎😘🤔🙂🤗🤨😥😏😏😣😥😣😣</p>
         </ImageBackground>
         <TwoColumnHero loadAnim="">
+          <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
           <HeroImg
             image="https://picsum.photos/200/200"
             imageAlt="Image 1"
             loadAnim="swipeFromLeft"
           />
-          <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
         </TwoColumnHero>
         <TwoColumnHero flipped loadAnim="">
+          <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
           <HeroImg
             image="https://picsum.photos/200/200"
             imageAlt="Image 1"
             loadAnim="swipeFromRight"
           />
-          <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
         </TwoColumnHero>
       </main>
     </>

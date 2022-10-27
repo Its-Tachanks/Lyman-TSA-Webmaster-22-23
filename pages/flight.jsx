@@ -28,12 +28,12 @@ export default function flight() {
       </ImageBackground>
 
       <TwoColumnHero flipped loadAnim="fadeIn">
+        <HeroText header="Header 1" text="Text 1" loadAnim="" />
         <HeroImg
           image="https://picsum.photos/200/200"
           imageAlt="Image 1"
           loadAnim=""
         />
-        <HeroText header="Header 1" text="Text 1" loadAnim="" />
       </TwoColumnHero>
 
       <div className={styles.stepsContainer}></div>
