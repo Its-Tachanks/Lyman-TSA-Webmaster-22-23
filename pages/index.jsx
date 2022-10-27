@@ -37,6 +37,7 @@ export default function Home() {
           <PageTitle title="🙈🙊" />
           <p>😘😍😍😎😎😋😋😊😎😎😎😎🙂🙂🙄😶😎😘🤔🙂🤗🤨😥😏😏😣😥😣😣</p>
         </ImageBackground>
+        {/* TODO Fix swipe animations since they arent hidden upon not being showen (causes horizontal scrollable page) */}
         <TwoColumnHero loadAnim="">
           <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
           <HeroImg
