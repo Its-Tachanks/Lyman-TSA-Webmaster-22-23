@@ -22,6 +22,7 @@ export default function HeroImg(props) {
         className="img-fluid rounded border border-2 border-danger"
         layout="fill"
         objectFit="contain"
+        unoptimized={true}
       />
     </div>
   );
