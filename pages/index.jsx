@@ -31,7 +31,7 @@ export default function Home() {
 
       {/* ! Main homepage content */}
       <main>
-        <TwoColumnHero flipped="false">
+        <TwoColumnHero flipped="false" loadAnim="">
           <HeroImg
             image="https://picsum.photos/200/200"
             imageAlt="Image 1"
@@ -39,39 +39,7 @@ export default function Home() {
           />
           <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
         </TwoColumnHero>
-        <TwoColumnHero flipped="true">
-          <HeroImg
-            image="https://picsum.photos/200/200"
-            imageAlt="Image 1"
-            loadAnim="swipeFromRight"
-          />
-          <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
-        </TwoColumnHero>
-        <TwoColumnHero flipped="false">
-          <HeroImg
-            image="https://picsum.photos/200/200"
-            imageAlt="Image 1"
-            loadAnim="swipeFromLeft"
-          />
-          <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
-        </TwoColumnHero>
-        <TwoColumnHero flipped="true">
-          <HeroImg
-            image="https://picsum.photos/200/200"
-            imageAlt="Image 1"
-            loadAnim="swipeFromRight"
-          />
-          <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
-        </TwoColumnHero>
-        <TwoColumnHero flipped="false">
-          <HeroImg
-            image="https://picsum.photos/200/200"
-            imageAlt="Image 1"
-            loadAnim="swipeFromLeft"
-          />
-          <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
-        </TwoColumnHero>
-        <TwoColumnHero flipped="true">
+        <TwoColumnHero flipped="true" loadAnim="">
           <HeroImg
             image="https://picsum.photos/200/200"
             imageAlt="Image 1"

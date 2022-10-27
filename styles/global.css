@@ -78,6 +78,7 @@ html {
 .fadeIn {
   opacity: 0;
   transition: all 1s;
+  -webkit-transition: all 1s;
 }
 
 .fadeIn.visible {
@@ -87,6 +88,7 @@ html {
 .swipeFromLeft {
   transform: translateX(-100vw);
   transition: all 1s;
+  -webkit-transition: all 1s;
 }
 
 .swipeFromLeft.visible {
@@ -96,6 +98,7 @@ html {
 .swipeFromRight {
   transform: translateX(100vw);
   transition: all 1s;
+  -webkit-transition: all 1s;
 }
 
 .swipeFromRight.visible {
