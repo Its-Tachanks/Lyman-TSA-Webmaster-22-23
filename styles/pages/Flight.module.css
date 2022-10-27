@@ -1,0 +1,83 @@
+.mainContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px;
+    overflow: visible;
+}
+
+.title
+{
+    font-size: 60px;
+}
+
+.banner
+{
+    position: relative;
+    height: 75px;
+    width: 100vw;
+
+    margin: 30px 0px;
+}
+
+.stepsContainer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.stepContainer
+{
+    margin-bottom: 100px;
+    height: 750px;
+
+    display: flex;
+}
+
+.reverse
+{
+    flex-direction: row-reverse;
+}
+
+.stepText
+{
+    width: 50%;
+    padding: 15px;
+
+    border: solid 1px var(--icon-color);
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.reverse .stepText
+{
+    border: solid 1px var(--icon-color);
+    border-left: none;
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.stepText h3
+{
+    font-family: "Aquire";
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.stepText p
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.stepImg
+{
+    position: relative;
+    width: 50%;
+    height: auto;
+}
