@@ -10,7 +10,9 @@ import { useRef, useEffect } from "react";
 import styles from "../../styles/parts/Navbar.module.css";
 
 // Component imports
-import { Tooltip, IconButton, Icon } from "@mui/material";
+import { Tooltip, IconButton, Button } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Flight, RocketLaunch } from "@mui/icons-material";
 
 // Page
 export default function Navbar(props) {
@@ -34,30 +36,26 @@ export default function Navbar(props) {
       <div
         className={`container-fluid d-flex justify-content-center align-items-center ${styles.navbarContainer}`}
       >
-        <Tooltip title="test" leaveDelay={100}>
-          <IconButton sx={{ color: "var(--icon-color)" }}>
-            <i className="fa-solid fa-bolt"></i>
-          </IconButton>
-        </Tooltip>
+        <Link href="/">
+          <Tooltip title="Home" leaveDelay={250}>
+            <IconButton sx={{ color: "red" }}>
+              <RocketLaunch className="icon" fontSize="medium" />
+            </IconButton>
+          </Tooltip>
+        </Link>
+      </div>
+      <div
+        className={`container-fluid d-flex justify-content-center align-items-center ${styles.navbarContainer} z-5 position-relative`}
+      >
+        <Link href="/flight">
+          <Tooltip title="Flight Steps" leaveDelay={250}>
+            <Button>Flight</Button>
+          </Tooltip>
+        </Link>
       </div>
       <div
         className={`container-fluid d-flex justify-content-center align-items-center ${styles.navbarContainer}`}
-      >
-        <Tooltip title="test" leaveDelay={100}>
-          <IconButton sx={{ color: "var(--icon-color)" }}>
-            <i className="fa-sharp fa-solid fa-mug-hot"></i>
-          </IconButton>
-        </Tooltip>
-      </div>
-      <div
-        className={`container-fluid d-flex justify-content-center align-items-center ${styles.navbarContainer}`}
-      >
-        <Tooltip title="test" leaveDelay={100}>
-          <IconButton sx={{ color: "var(--icon-color)" }}>
-            <i className="fa-brands fa-docker"></i>
-          </IconButton>
-        </Tooltip>
-      </div>
+      ></div>
     </nav>
   );
 }

@@ -43,6 +43,9 @@
   --loader-color: #0466c8;
 
   --icon-color: #ff0000;
+  --icon-color-hover: #ff0000;
+  --icon-color-active: #ff0000;
+  --icon-size-scale: 1.5;
 }
 
 /* Below is a css reset. It fixes some common issues with cross-browser compatibility. */

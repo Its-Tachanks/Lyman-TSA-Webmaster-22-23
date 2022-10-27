@@ -15,6 +15,8 @@ import styles from "../styles/pages/Home.module.css";
 import TwoColumnHero from "../components/templates/TwoColumnHero";
 import HeroImg from "../components/templates/heroParts/HeroImg";
 import HeroText from "../components/templates/heroParts/HeroText";
+import ImageBackground from "../components/templates/ImageBackground";
+import PageTitle from "../components/templates/PageTitle";
 
 // Page
 export default function Home() {
@@ -31,7 +33,11 @@ export default function Home() {
 
       {/* ! Main homepage content */}
       <main>
-        <TwoColumnHero flipped="false" loadAnim="">
+        <ImageBackground image="/img/a.gif" imageAlt="Stars" height="100vh">
+          <PageTitle title="🙈🙊" />
+          <p>😘😍😍😎😎😋😋😊😎😎😎😎🙂🙂🙄😶😎😘🤔🙂🤗🤨😥😏😏😣😥😣😣</p>
+        </ImageBackground>
+        <TwoColumnHero loadAnim="">
           <HeroImg
             image="https://picsum.photos/200/200"
             imageAlt="Image 1"
@@ -39,7 +45,7 @@ export default function Home() {
           />
           <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
         </TwoColumnHero>
-        <TwoColumnHero flipped="true" loadAnim="">
+        <TwoColumnHero flipped loadAnim="">
           <HeroImg
             image="https://picsum.photos/200/200"
             imageAlt="Image 1"

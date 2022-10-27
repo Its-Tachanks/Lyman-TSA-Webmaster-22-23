@@ -23,7 +23,7 @@ export default function ImageBackground(props) {
         className="position-relative w-100"
         unoptimized={true}
       />
-      <div className="position-absolute d-flex align-items-center justify-content-center h-100 w-100 z-2">
+      <div className="position-absolute d-flex align-items-center justify-content-center h-100 w-100 z-2 flex-column flex-wrap">
         {props.children}
       </div>
     </div>

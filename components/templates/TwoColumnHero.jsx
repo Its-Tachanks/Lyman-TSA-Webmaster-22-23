@@ -16,7 +16,7 @@ export default function TwoColumnHero(props) {
       <div className={`container-sm px-4 py-5 mw-100 ${props.loadAnim} h-100`}>
         <div
           className={`row align-items-center ${
-            props.flipped === "true" ? "flex-row-reverse" : ""
+            props.flipped ? "flex-row-reverse" : ""
           }`}
         >
           {props.children}
