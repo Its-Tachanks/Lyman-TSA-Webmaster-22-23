@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+
 /* Variables */
 :root {
   --true-blue: #0466c8;
@@ -31,10 +33,10 @@
   --font-weight-link: 600;
 
   --font-family-title: "Aquire", sans-serif;
-  --font-family-subtitle: "Roboto";
-  --font-family-normal: "Roboto";
-  --font-family-small: "Roboto";
-  --font-family-link: "Roboto";
+  --font-family-subtitle: "Raleway", sans-serif;
+  --font-family-normal: "Raleway", sans-serif;
+  --font-family-small: "Raleway", sans-serif;
+  --font-family-link: "Raleway", sans-serif;
 
   --loader-color: #0466c8;
 
