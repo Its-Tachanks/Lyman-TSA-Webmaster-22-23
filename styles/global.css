@@ -74,7 +74,7 @@ html {
 
 .fadeIn {
   opacity: 0;
-  transition: all 1s;
+  transition: opacity 1s;
   overflow: hidden;
 }
 
@@ -84,7 +84,7 @@ html {
 
 .swipeFromLeft {
   transform: translateX(-100vw);
-  transition: all 1s;
+  transition: transform 1s;
   overflow: hidden;
 }
 
@@ -94,7 +94,7 @@ html {
 
 .swipeFromRight {
   transform: translateX(100%);
-  transition: all 1s;
+  transition: transform 1s;
   overflow: hidden;
 }
 
