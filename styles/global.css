@@ -60,10 +60,9 @@ body,
 main {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-  font-family: var(--font-family-normal);
-
-  background-color: var(--bg-color-primary);
+  box-sizing: border-box !important;
+  font-family: var(--font-family-normal) !important;
+  background-color: var(--bg-color-primary) !important;
 }
 
 html {
