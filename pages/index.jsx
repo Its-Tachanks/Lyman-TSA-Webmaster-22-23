@@ -43,7 +43,7 @@ export default function Home() {
           <HeroImg
             image="https://picsum.photos/200/200"
             imageAlt="Image 1"
-            loadAnim="swipeFromLeft"
+            loadAnim="swipeFromRight"
           />
         </TwoColumnHero>
         <TwoColumnHero flipped loadAnim="">
@@ -51,7 +51,7 @@ export default function Home() {
           <HeroImg
             image="https://picsum.photos/200/200"
             imageAlt="Image 1"
-            loadAnim="swipeFromRight"
+            loadAnim="swipeFromLeft"
           />
         </TwoColumnHero>
       </main>

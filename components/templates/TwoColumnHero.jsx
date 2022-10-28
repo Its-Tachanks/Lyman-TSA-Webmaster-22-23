@@ -13,7 +13,9 @@ import styles from "../../styles/templates/TwoColumnHero.module.css";
 export default function TwoColumnHero(props) {
   return (
     <section>
-      <div className={`container-sm px-4 py-5 mw-100 ${props.loadAnim} h-100`}>
+      <div
+        className={`container-sm px-4 py-5 mw-100 ${props.loadAnim} h-100 overflow-hidden`}
+      >
         <div
           className={`row align-items-center ${
             props.flipped ? "flex-row-reverse" : ""

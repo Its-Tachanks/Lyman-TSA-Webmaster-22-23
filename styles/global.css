@@ -15,27 +15,23 @@
 
   --font-color-title: #ededed;
   --font-color-subtitle: #e5e5e5;
-  --font-color-alttitle: #dcdcdc;
   --font-color-normal: #d7d7d7;
   --font-color-heavy: #0353a4;
   --font-color-link: #0353a4;
 
   --font-size-title: 2.5rem;
   --font-size-subtitle: 1.5rem;
-  --font-size-alttitle: 1.25rem;
   --font-size-normal: 1rem;
   --font-size-small: 0.75rem;
 
   --font-weight-title: 700;
   --font-weight-subtitle: 600;
-  --font-weight-alttitle: 500;
   --font-weight-normal: 400;
   --font-weight-small: 300;
   --font-weight-link: 600;
 
   --font-family-title: "Aquire", sans-serif;
   --font-family-subtitle: "Roboto";
-  --font-family-alttitle: "Roboto";
   --font-family-normal: "Roboto";
   --font-family-small: "Roboto";
   --font-family-link: "Roboto";
@@ -44,8 +40,6 @@
 
   --icon-color: #ff0000;
   --icon-color-hover: #ff0000;
-  --icon-color-active: #ff0000;
-  --icon-size-scale: 1.5;
 }
 
 /* Below is a css reset. It fixes some common issues with cross-browser compatibility. */
@@ -81,6 +75,7 @@ html {
 .fadeIn {
   opacity: 0;
   transition: all 1s;
+  overflow: hidden;
 }
 
 .fadeIn.visible {
@@ -90,6 +85,7 @@ html {
 .swipeFromLeft {
   transform: translateX(-100vw);
   transition: all 1s;
+  overflow: hidden;
 }
 
 .swipeFromLeft.visible {
@@ -97,12 +93,17 @@ html {
 }
 
 .swipeFromRight {
-  transform: translateX(100vw);
+  transform: translateX(100%);
   transition: all 1s;
+  overflow: hidden;
 }
 
 .swipeFromRight.visible {
   transform: translateX(0);
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .z-1 {

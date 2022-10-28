@@ -12,7 +12,7 @@ import styles from "../../styles/templates/ImageBackground.module.css";
 // Page
 export default function ImageBackground(props) {
   return (
-    <div
+    <section
       className="position-relative w-100 z-1"
       style={{ height: props.height }}
     >
@@ -26,6 +26,6 @@ export default function ImageBackground(props) {
       <div className="position-absolute d-flex align-items-center justify-content-center h-100 w-100 z-2 flex-column flex-wrap">
         {props.children}
       </div>
-    </div>
+    </section>
   );
 }
