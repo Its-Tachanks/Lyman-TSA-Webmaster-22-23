@@ -28,14 +28,52 @@ export default function flight() {
         <p>hi</p>
       </ImageBackground>
 
-      <TwoColumnHero flipped loadAnim="fadeIn">
-        <HeroText header="Header 1" text="Text 1" loadAnim="" />
+      <TwoColumnHero loadAnim="fadeIn">
+        <HeroText
+          header="Step 1"
+          text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa atque
+        aliquid dicta quos est doloremque consequatur qui totam. Quo aliquid
+        voluptates enim esse hic porro accusantium laudantium neque! Voluptatum,
+        molestiae!"
+          loadAnim=""
+        />
         <HeroImg
           image="https://picsum.photos/200/200"
           imageAlt="Image 1"
           loadAnim=""
         />
       </TwoColumnHero>
+      <TwoColumnHero flipped loadAnim="fadeIn">
+        <HeroText
+          header="Step 2"
+          text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa atque
+        aliquid dicta quos est doloremque consequatur qui totam. Quo aliquid
+        voluptates enim esse hic porro accusantium laudantium neque! Voluptatum,
+        molestiae!"
+          loadAnim=""
+        />
+        <HeroImg
+          image="https://picsum.photos/300/400"
+          imageAlt="Image 1"
+          loadAnim=""
+        />
+      </TwoColumnHero>
+      <TwoColumnHero loadAnim="fadeIn">
+        <HeroText
+          header="Step 3"
+          text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa atque
+        aliquid dicta quos est doloremque consequatur qui totam. Quo aliquid
+        voluptates enim esse hic porro accusantium laudantium neque! Voluptatum,
+        molestiae!"
+          loadAnim=""
+        />
+        <HeroImg
+          image="https://picsum.photos/200/200"
+          imageAlt="Image 1"
+          loadAnim=""
+        />
+      </TwoColumnHero>
+
       <div className={styles.stepsContainer}></div>
     </>
   );
