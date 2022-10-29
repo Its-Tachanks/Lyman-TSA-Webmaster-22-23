@@ -16,3 +16,12 @@
   height: 100%;
   color: var(--icon-color);
 }
+.navbarContainer p:hover,
+.navbarContainer button:hover {
+  transition: background-color 0.2s ease;
+  padding: 4px;
+  border-radius: 50px;
+  border: 2px solid black;
+  background-color: lightgray;
+  color: black;
+}

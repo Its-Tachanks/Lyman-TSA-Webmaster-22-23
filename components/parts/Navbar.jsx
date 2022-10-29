@@ -55,7 +55,9 @@ export default function Navbar(props) {
       </div>
       <div
         className={`container-fluid d-flex justify-content-center align-items-center ${styles.navbarContainer}`}
-      ></div>
+      >
+        <p>Social media stuff</p>
+      </div>
     </nav>
   );
 }

@@ -75,7 +75,7 @@ html {
 .fadeIn {
   opacity: 0;
   transition: opacity 1s;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .fadeIn.visible {
@@ -85,7 +85,7 @@ html {
 .swipeFromLeft {
   transform: translateX(-100vw);
   transition: transform 1s;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .swipeFromLeft.visible {
@@ -95,7 +95,7 @@ html {
 .swipeFromRight {
   transform: translateX(100%);
   transition: transform 1s;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .swipeFromRight.visible {
@@ -162,6 +162,8 @@ p {
   font-weight: var(--font-weight-normal);
   font-family: var(--font-family-normal);
   color: var(--font-color-normal);
+
+  margin-bottom: 0;
 }
 
 a {

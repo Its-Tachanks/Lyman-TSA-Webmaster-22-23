@@ -15,7 +15,8 @@ import styles from "../styles/pages/Home.module.css";
 import TwoColumnHero from "../components/templates/TwoColumnHero";
 import HeroImg from "../components/templates/heroParts/HeroImg";
 import HeroText from "../components/templates/heroParts/HeroText";
-import ImageBackground from "../components/templates/ImageBackground";
+import ImageBackground from "../components/templates/backgrounds/ImageBackground";
+import ThreeBackground from "../components/templates/backgrounds/ThreeBackground";
 import PageTitle from "../components/templates/PageTitle";
 
 // Page
@@ -37,6 +38,10 @@ export default function Home() {
           <PageTitle title="🙈🙊" />
           <p>😘😍😍😎😎😋😋😊😎😎😎😎🙂🙂🙄😶😎😘🤔🙂🤗🤨😥😏😏😣😥😣😣</p>
         </ImageBackground>
+        <ThreeBackground height="50vh">
+          <PageTitle title="🙈🙊" />
+          <p>😘😍😍😎😎😋😋😊😎😎😎😎🙂🙂🙄😶😎😘🤔🙂🤗🤨😥😏😏😣😥😣😣</p>
+        </ThreeBackground>
         {/* TODO Fix swipe animations since they arent hidden upon not being showen (causes horizontal scrollable page) */}
         <TwoColumnHero loadAnim="">
           <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Script from "next/script";
 
 // CSS imports
-import styles from "../../styles/templates/ImageBackground.module.css";
+import styles from "../../../styles/templates/backgrounds/ImageBackground.module.css";
 
 // Component imports
 
@@ -23,7 +23,7 @@ export default function ImageBackground(props) {
         className="position-relative w-100"
         unoptimized={true}
       />
-      <div className="position-absolute d-flex align-items-center justify-content-center h-100 w-100 z-2 flex-column flex-wrap">
+      <div className="position-absolute d-flex align-items-center justify-content-center h-100 w-100 z-2 flex-column flex-wrap top-0 left-0">
         {props.children}
       </div>
     </section>

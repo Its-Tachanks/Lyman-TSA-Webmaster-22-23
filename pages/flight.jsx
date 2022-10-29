@@ -15,7 +15,8 @@ import HeroImg from "../components/templates/heroParts/HeroImg";
 import HeroText from "../components/templates/heroParts/HeroText";
 import FlightStep from "../components/parts/FlightStep";
 import PageTitle from "../components/templates/PageTitle";
-import ImageBackground from "../components/templates/ImageBackground";
+import ImageBackground from "../components/templates/backgrounds/ImageBackground";
+import ThreeBackground from "../components/templates/backgrounds/ThreeBackground";
 
 // Page
 
@@ -35,7 +36,6 @@ export default function flight() {
           loadAnim=""
         />
       </TwoColumnHero>
-
       <div className={styles.stepsContainer}></div>
     </>
   );
