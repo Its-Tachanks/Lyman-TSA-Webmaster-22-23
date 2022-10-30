@@ -23,7 +23,7 @@ import ThreeBackground from "../components/templates/backgrounds/ThreeBackground
 export default function flight() {
   return (
     <>
-      <ImageBackground image="/img/b.gif" imageAlt="Stars" height="400px">
+      <ImageBackground image="/img/stars.gif" imageAlt="Stars" height="400px">
         <PageTitle title="Flight" />
         <p>hi</p>
       </ImageBackground>

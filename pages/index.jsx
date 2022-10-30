@@ -34,7 +34,7 @@ export default function Home() {
 
       {/* ! Main homepage content */}
       <main>
-        <ImageBackground image="/img/a.gif" imageAlt="Stars" height="100vh">
+        <ImageBackground image="/img/stars.gif" imageAlt="Stars" height="100vh">
           <PageTitle title="🙈🙊" />
           <p>😘😍😍😎😎😋😋😊😎😎😎😎🙂🙂🙄😶😎😘🤔🙂🤗🤨😥😏😏😣😥😣😣</p>
         </ImageBackground>
