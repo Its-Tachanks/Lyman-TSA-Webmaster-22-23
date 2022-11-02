@@ -2,24 +2,13 @@
 
 /* Variables */
 :root {
-  --true-blue: #0466c8;
-  --usafa-blue: #0353a4;
-  --dark-cornflower-blue: #023e7d;
-  --oxford-blue: #002855;
-  --oxford-blue-2: #001845;
-  --oxford-blue-3: #001233;
-  --independence: #33415c;
-  --black-coral: #5c677d;
-  --roman-silver: #7d8597;
-  --manatee: #979dac;
+  --bg-color-primary: #856dcb;
 
-  --bg-color-primary: #1c1c1c;
-
-  --font-color-title: #ededed;
-  --font-color-subtitle: #e5e5e5;
-  --font-color-normal: #d7d7d7;
-  --font-color-heavy: #0353a4;
-  --font-color-link: #0353a4;
+  --font-color-title: #0e0e0e;
+  --font-color-subtitle: #0e0e0e;
+  --font-color-normal: #0e0e0e;
+  --font-color-heavy: #383838;
+  --font-color-link: #38025a;
 
   --font-size-title: 2.5rem;
   --font-size-subtitle: 1.5rem;
@@ -38,10 +27,10 @@
   --font-family-small: "Raleway", sans-serif;
   --font-family-link: "Raleway", sans-serif;
 
-  --loader-color: #0466c8;
+  --loader-color: #856dcb;
 
-  --icon-color: #ff0000;
-  --icon-color-hover: #ff0000;
+  --nav-color: #856dcb;
+  --nav-color-hover: #856dcb;
 }
 
 /* Below is a css reset. It fixes some common issues with cross-browser compatibility. */

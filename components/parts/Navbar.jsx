@@ -22,8 +22,8 @@ export default function Navbar(props) {
     window.addEventListener("scroll", () => {
       //console.log(document.body.getBoundingClientRect().top);
       document.body.getBoundingClientRect().top <= -1
-        ? navbarRef.current.classList.add(`${styles.blackBg}`)
-        : navbarRef.current.classList.remove(`${styles.blackBg}`);
+        ? navbarRef.current.classList.add(`${styles.scrolledNavbar}`)
+        : navbarRef.current.classList.remove(`${styles.scrolledNavbar}`);
     });
   }, []);
 
@@ -38,7 +38,7 @@ export default function Navbar(props) {
       >
         <Link href="/">
           <Tooltip title="Home" leaveDelay={250}>
-            <IconButton sx={{ color: "red" }}>
+            <IconButton sx={{ color: "var(--nav-color)" }}>
               <RocketLaunch className="icon" fontSize="medium" />
             </IconButton>
           </Tooltip>
@@ -48,7 +48,11 @@ export default function Navbar(props) {
         className={`container-fluid d-flex justify-content-center align-items-center ${styles.navbarContainer} z-5 position-relative`}
       >
         <Link href="/flight">
-          <Tooltip title="Flight Steps" leaveDelay={250}>
+          <Tooltip
+            title="Flight Steps"
+            leaveDelay={250}
+            sx={{ color: "var(--nav-color)" }}
+          >
             <Button>Flight</Button>
           </Tooltip>
         </Link>
@@ -56,7 +60,15 @@ export default function Navbar(props) {
       <div
         className={`container-fluid d-flex justify-content-center align-items-center ${styles.navbarContainer}`}
       >
-        <p>Social media stuff</p>
+        <Link href="/attributions">
+          <Tooltip
+            title="Idk yet"
+            leaveDelay={250}
+            sx={{ color: "var(--nav-color)" }}
+          >
+            <Button>IDk</Button>
+          </Tooltip>
+        </Link>
       </div>
     </nav>
   );

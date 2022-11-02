@@ -35,13 +35,18 @@ export default function Home() {
       {/* ! Main homepage content */}
       <main>
         <ImageBackground image="/img/stars.gif" imageAlt="Stars" height="100vh">
-          <PageTitle title="🙈🙊" />
-          <p>😘😍😍😎😎😋😋😊😎😎😎😎🙂🙂🙄😶😎😘🤔🙂🤗🤨😥😏😏😣😥😣😣</p>
+          <PageTitle title="Galatech Systems" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+            dolore doloribus iste incidunt maxime consequuntur officiis est eos
+            qui voluptatibus aperiam, laboriosam praesentium, maiores dolorem
+            quas dignissimos porro. Dolores, omnis.
+          </p>
         </ImageBackground>
-        <ThreeBackground height="50vh">
+        {/* <ThreeBackground height="50vh">
           <PageTitle title="🙈🙊" />
           <p>😘😍😍😎😎😋😋😊😎😎😎😎🙂🙂🙄😶😎😘🤔🙂🤗🤨😥😏😏😣😥😣😣</p>
-        </ThreeBackground>
+        </ThreeBackground> */}
         {/* TODO Fix swipe animations since they arent hidden upon not being showen (causes horizontal scrollable page) */}
         <TwoColumnHero loadAnim="">
           <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />

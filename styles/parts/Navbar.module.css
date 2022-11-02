@@ -4,24 +4,41 @@
   width: 100%;
   height: 64px;
   transition: background-color 0.2s ease-in-out;
-  color: red;
+
+  color: var(--icon-color);
 }
 
 /* #navbar:hover, */
-#navbar.blackBg {
+#navbar.scrolledNavbar {
   background-color: #2d2d2d;
+}
+
+#navbar:not(.scrolledNavbar) .navbarContainer > * {
+  background-color: rgba(142, 20, 190, 0.3);
 }
 
 .navbarContainer {
   height: 100%;
   color: var(--icon-color);
+  transform-origin: center;
+  transition: transform 0.5s ease;
 }
+
+.navbarContainer p,
+.navbarContainer button {
+  transition: transform 0.5s ease;
+  padding: 4px;
+  border-radius: 10px;
+  color: var(--nav-color);
+}
+
+.navbarContainer button:has(svg) {
+  border-radius: 50%;
+}
+
 .navbarContainer p:hover,
 .navbarContainer button:hover {
-  transition: background-color 0.2s ease;
-  padding: 4px;
-  border-radius: 50px;
-  border: 2px solid black;
-  background-color: lightgray;
-  color: black;
+  transform: scale(1.1);
+  border: 2px solid rgba(127, 18, 194, 0.5);
+  background-color: rgba(127, 18, 194, 0.4);
 }
