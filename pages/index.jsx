@@ -34,7 +34,7 @@ export default function Home() {
 
       {/* ! Main homepage content */}
       <main>
-        <ImageBackground image="/img/stars.gif" imageAlt="Stars" height="100vh">
+        <ImageBackground image="https://assets.hongkiat.com/uploads/fantastic-website-space-theme/spaceadvisor.jpg" imageAlt="Stars" height="100vh">
           <PageTitle title="Galatech Systems" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
