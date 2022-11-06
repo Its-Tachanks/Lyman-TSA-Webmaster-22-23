@@ -21,12 +21,12 @@
   height: 100%;
   color: var(--icon-color);
   transform-origin: center;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 
 .navbarContainer p,
 .navbarContainer button {
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
   padding: 4px;
   border-radius: 10px;
   color: var(--nav-color);

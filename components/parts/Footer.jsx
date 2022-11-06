@@ -1,7 +1,8 @@
-// Next js imports
+// Imports
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 
 // CSS imports
 import styles from "../../styles/parts/Footer.module.css";

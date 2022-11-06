@@ -18,6 +18,7 @@ import HeroText from "../components/templates/heroParts/HeroText";
 import ImageBackground from "../components/templates/backgrounds/ImageBackground";
 import ThreeBackground from "../components/templates/backgrounds/ThreeBackground";
 import PageTitle from "../components/templates/PageTitle";
+import HomeTitle from "../components/parts/home/HomeTitle";
 
 // Page
 export default function Home() {
@@ -34,24 +35,17 @@ export default function Home() {
 
       {/* ! Main homepage content */}
       <main>
-        <ImageBackground
-          image="https://assets.hongkiat.com/uploads/fantastic-website-space-theme/spaceadvisor.jpg"
-          imageAlt="Stars"
-          height="100vh"
-        >
-          <PageTitle title="Galatech Systems" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-            dolore doloribus iste incidunt maxime consequuntur officiis est eos
-            qui voluptatibus aperiam, laboriosam praesentium, maiores dolorem
-            quas dignissimos porro. Dolores, omnis.
-          </p>
-        </ImageBackground>
+        <HomeTitle
+          title="Home"
+          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae a
+        nisi consequatur quidem fugit! Blanditiis, velit. Quibusdam, quo
+        accusantium minus saepe, debitis, quisquam quas autem facilis velit
+        cupiditate tenetur in?"
+        />
         {/* <ThreeBackground height="50vh">
           <PageTitle title="🙈🙊" />
           <p>😘😍😍😎😎😋😋😊😎😎😎😎🙂🙂🙄😶😎😘🤔🙂🤗🤨😥😏😏😣😥😣😣</p>
         </ThreeBackground> */}
-        {/* TODO Fix swipe animations since they arent hidden upon not being showen (causes horizontal scrollable page) */}
         <TwoColumnHero loadAnim="">
           <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
           <HeroImg

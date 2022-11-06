@@ -13,7 +13,7 @@ import styles from "../../../styles/templates/backgrounds/ImageBackground.module
 export default function ImageBackground(props) {
   return (
     <section
-      className="position-relative w-100 z-1"
+      className={`position-relative w-100 z-1`}
       style={{ height: props.height }}
     >
       <Image
