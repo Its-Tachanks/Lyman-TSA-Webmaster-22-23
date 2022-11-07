@@ -13,17 +13,20 @@ import styles from "../../../styles/templates/backgrounds/ImageBackground.module
 export default function ImageBackground(props) {
   return (
     <section
-      className={`position-relative w-100 z-1`}
+      className={`position-relative w-100 z-1 top-0 start-0`}
       style={{ height: props.height }}
     >
       <Image
         src={props.image}
         alt={props.imageAlt}
         layout="fill"
-        className="position-relative w-100"
-        unoptimized={true}
+        className=""
+        unoptimized
+        objectFit="cover"
+        placeholder="blur"
+        blurDataURL={props.image}
       />
-      <div className="position-absolute d-flex align-items-center justify-content-center h-100 w-100 z-2 flex-column flex-wrap top-0 left-0">
+      <div className="position-absolute d-flex align-items-center justify-content-center h-100 w-100 z-2 flex-column flex-wrap top-0 start-0">
         {props.children}
       </div>
     </section>

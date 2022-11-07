@@ -45,7 +45,7 @@ export default function ThreeBackground(props) {
         <gridHelper />
         <ambientLight intensity={0.5} />
       </Canvas>
-      <div className="position-absolute d-flex align-items-center justify-content-center h-100 w-100 z-2 flex-column flex-wrap top-0 left-0">
+      <div className="position-absolute d-flex align-items-center justify-content-center h-100 w-100 z-2 flex-column flex-wrap top-0 start-0">
         {props.children}
       </div>
     </div>

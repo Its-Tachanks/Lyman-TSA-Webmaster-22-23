@@ -37,15 +37,8 @@ export default function Home() {
       <main>
         <HomeTitle
           title="Home"
-          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae a
-        nisi consequatur quidem fugit! Blanditiis, velit. Quibusdam, quo
-        accusantium minus saepe, debitis, quisquam quas autem facilis velit
-        cupiditate tenetur in?"
+          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit"
         />
-        {/* <ThreeBackground height="50vh">
-          <PageTitle title="🙈🙊" />
-          <p>😘😍😍😎😎😋😋😊😎😎😎😎🙂🙂🙄😶😎😘🤔🙂🤗🤨😥😏😏😣😥😣😣</p>
-        </ThreeBackground> */}
         <TwoColumnHero loadAnim="">
           <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
           <HeroImg

@@ -13,9 +13,11 @@ import ImageBackground from "../../templates/backgrounds/ImageBackground";
 // Page
 export default function HomeTitle(props) {
   // TODO Ideas for animations
-  // Circle follows mouse revaling hidden text
-  // Mouse moves line revealing hidden text
-  // Fade in text with space background
+  // * Circle follows mouse revaling hidden text
+  // * Mouse moves line revealing hidden text
+  // * Fade in text with space-like background
+  // * Fade in text with typing animation changing one word to another
+
   return (
     <>
       <ImageBackground
