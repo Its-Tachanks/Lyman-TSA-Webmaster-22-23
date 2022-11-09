@@ -8,6 +8,8 @@ import { useProgress } from "@react-three/drei";
 
 import { useRef, useEffect, Suspense } from "react";
 
+import ReactTypingEffect from "react-typing-effect";
+
 // CSS imports
 import styles from "../styles/pages/Home.module.css";
 
@@ -17,8 +19,7 @@ import HeroImg from "../components/templates/heroParts/HeroImg";
 import HeroText from "../components/templates/heroParts/HeroText";
 import ImageBackground from "../components/templates/backgrounds/ImageBackground";
 import ThreeBackground from "../components/templates/backgrounds/ThreeBackground";
-import PageTitle from "../components/templates/PageTitle";
-import HomeTitle from "../components/parts/home/HomeTitle";
+import TitleTextWrapper from "../components/templates/TitleTextWrapper";
 
 // Page
 export default function Home() {
@@ -35,10 +36,19 @@ export default function Home() {
 
       {/* ! Main homepage content */}
       <main>
-        <HomeTitle
-          title="Home"
-          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit"
-        />
+        <ImageBackground image="/img/stars.gif" imageAlt="hi" height="100vh">
+          <TitleTextWrapper className="p-4 d-flex flex-column">
+            <h1>Ass or tits? Balls... {"->"}</h1>
+            <ReactTypingEffect
+              text={["Testys", "Testy's", "Testy's Test"]}
+              eraseSpeed="100"
+              typingDelay="1000"
+              cursor="_"
+            />
+            <embed src="https://lanyard.cnrad.dev/api/484343723426054150"></embed>
+          </TitleTextWrapper>
+        </ImageBackground>
+
         <TwoColumnHero loadAnim="">
           <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
           <HeroImg
@@ -47,6 +57,7 @@ export default function Home() {
             loadAnim="swipeFromRight"
           />
         </TwoColumnHero>
+
         <TwoColumnHero flipped loadAnim="">
           <HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />
           <HeroImg

@@ -4,11 +4,12 @@
 :root {
   --bg-color-primary: #856dcb;
 
-  --font-color-title: #0e0e0e;
-  --font-color-subtitle: #0e0e0e;
-  --font-color-normal: #0e0e0e;
-  --font-color-heavy: #383838;
-  --font-color-link: #38025a;
+  --font-color-title: white;
+  --font-color-subtitle: white;
+  --font-color-normal: white;
+  --font-color-heavy: #ff4444;
+  --font-color-link: #ff8400;
+  --font-color-link-hover: #ffaa00;
 
   --font-size-title: 2.5rem;
   --font-size-subtitle: 1.5rem;
@@ -164,4 +165,9 @@ a {
   font-family: var(--font-family-link);
   color: var(--font-color-link);
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--font-color-link-hover);
+  text-decoration: underline;
 }
