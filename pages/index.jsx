@@ -17,9 +17,10 @@ import styles from "../styles/pages/Home.module.css";
 import TwoColumnHero from "../components/templates/TwoColumnHero";
 import HeroImg from "../components/templates/heroParts/HeroImg";
 import HeroText from "../components/templates/heroParts/HeroText";
-import ImageBackground from "../components/templates/backgrounds/ImageBackground";
 import VideoBackground from "../components/templates/backgrounds/VideoBackground";
 import TitleTextWrapper from "../components/templates/TitleTextWrapper";
+import WaveTransition from "../components/templates/WaveTransition";
+import FadeTransition from "../components/templates/FadeTransition";
 
 // Page
 export default function Home() {
@@ -36,36 +37,38 @@ export default function Home() {
 
 			{/* ! Main homepage content */}
 			<main>
-				<VideoBackground
-					video="/img/Earth.mp4"
-					imageAlt="hi"
-					height="100vh"
-					speed="0.8"
-					loadAnim="fadeIn visible"
-				>
-					<div className="row justify-content-between align-items-center w-75">
-						<div className="col-md-7 position-relative d-flex justify-content-center align-items-center">
-							<TitleTextWrapper className="p-4 d-flex flex-column">
-								<h1>Ass or Tits? Cock...</h1>
-								<div className="d-inline-block">
-									<p>👼🏿</p>
-									<ReactTypingEffect
-										text={[
-											"Cock Crushers",
-											"Dick Dingers",
-											"Nut Nullifiers",
-											"Penis Pummelers",
-										]}
-										eraseSpeed="100"
-										typingDelay="1000"
-										cursor="_"
-									/>
-								</div>
-							</TitleTextWrapper>
+				<FadeTransition height="5%">
+					<VideoBackground
+						video="/img/Earth.mp4"
+						imageAlt="hi"
+						height="105vh"
+						speed="0.8"
+						loadAnim="fadeIn visible"
+					>
+						<div className="row align-items-center w-100 container-md bg-danger">
+							<div className="col-md-7 position-relative d-flex justify-content-center align-items-center h-100 bg-success">
+								<TitleTextWrapper className="p-4 d-flex flex-column">
+									<h1>Ass or Tits? Cock...</h1>
+									<div className="d-inline-block">
+										<p>👼🏿</p>
+										<ReactTypingEffect
+											text={[
+												"Cock Crushers",
+												"Dick Dingers",
+												"Nut Nullifiers",
+												"Penis Pummelers",
+											]}
+											eraseSpeed="100"
+											typingDelay="1000"
+											cursor="_"
+										/>
+									</div>
+								</TitleTextWrapper>
+							</div>
+							<div className="col-md-5 position-relative d-flex justify-content-center align-items-center h-100"></div>
 						</div>
-						<div className="col-md-5 position-relative d-flex justify-content-center align-items-center"></div>
-					</div>
-				</VideoBackground>
+					</VideoBackground>
+				</FadeTransition>
 
 				<TwoColumnHero loadAnim="">
 					<HeroText header="Header 1" text="Text 1" loadAnim="fadeIn" />

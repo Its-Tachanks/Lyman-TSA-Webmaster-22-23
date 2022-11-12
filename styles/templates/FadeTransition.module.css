@@ -1,0 +1,4 @@
+#fadeTransitionDiv {
+	/* bg color linear gradient transparent to bg  */
+	background: linear-gradient(transparent, var(--bg-color-primary));
+}
