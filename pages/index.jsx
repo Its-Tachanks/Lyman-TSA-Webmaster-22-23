@@ -41,7 +41,7 @@ export default function Home() {
 					imageAlt="hi"
 					height="100vh"
 					speed="0.8"
-					loadAnim="fadeIn"
+					loadAnim="fadeIn visible"
 				>
 					<div className="row justify-content-between align-items-center w-75">
 						<div className="col-md-7 position-relative d-flex justify-content-center align-items-center">
