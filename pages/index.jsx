@@ -45,24 +45,21 @@ export default function Home() {
 						speed="0.8"
 						loadAnim="fadeIn visible"
 					>
-						<div className="row align-items-center w-100 container-md bg-danger">
-							<div className="col-md-7 position-relative d-flex justify-content-center align-items-center h-100 bg-success">
+						<div className="row align-items-center w-100 container-md">
+							<div className="col-md-7 position-relative d-flex justify-content-center align-items-center h-100">
 								<TitleTextWrapper className="p-4 d-flex flex-column">
-									<h1>Ass or Tits? Cock...</h1>
-									<div className="d-inline-block">
-										<p>👼🏿</p>
-										<ReactTypingEffect
-											text={[
-												"Cock Crushers",
-												"Dick Dingers",
-												"Nut Nullifiers",
-												"Penis Pummelers",
-											]}
-											eraseSpeed="100"
-											typingDelay="1000"
-											cursor="_"
-										/>
-									</div>
+									<h1>Galatech Systems</h1>
+									<ReactTypingEffect
+										text={[
+											"Cock Crushers",
+											"Dick Dingers",
+											"Nut Nullifiers",
+											"Penis Pummelers",
+										]}
+										eraseSpeed="100"
+										typingDelay="1000"
+										cursor="_"
+									/>
 								</TitleTextWrapper>
 							</div>
 							<div className="col-md-5 position-relative d-flex justify-content-center align-items-center h-100"></div>
