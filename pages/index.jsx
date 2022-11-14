@@ -37,7 +37,7 @@ export default function Home() {
 
 			{/* ! Main homepage content */}
 			<main>
-				<FadeTransition height="2%">
+				<FadeTransition height="70%">
 					<VideoBackground
 						video="/img/Earth.mp4"
 						imageAlt="hi"
