@@ -24,8 +24,7 @@
   transition: transform 0.3s ease;
 }
 
-.navbarContainer p,
-.navbarContainer button {
+.navbarContainer p {
   transition: transform 0.3s ease;
   padding: 4px;
   border-radius: 10px;

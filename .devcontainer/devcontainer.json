@@ -3,7 +3,7 @@
 		"cpus": 4
 	},
 	"waitFor": "onCreateCommand",
-	"updateContentCommand": "npm install && npm run build",
+	"updateContentCommand": "npm install",
 	"postCreateCommand": "",
 	"postAttachCommand": {
 		"server": "npm run dev"
@@ -19,5 +19,14 @@
 			"onAutoForward": "openPreview"
 		}
 	},
-	"forwardPorts": [3000]
+	"forwardPorts": [3000],
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/git-lfs:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers/features/powershell:1": {},
+		"ghcr.io/devcontainers-contrib/features/heroku-cli:1": {},
+		"ghcr.io/shyim/devcontainers-features/php:0": {}
+	}
 }
