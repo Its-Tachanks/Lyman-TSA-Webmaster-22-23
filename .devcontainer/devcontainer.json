@@ -1,16 +1,17 @@
 {
+	"name": "TSA-Webmaster-22-23",
 	"hostRequirements": {
 		"cpus": 4
 	},
-	"waitFor": "onCreateCommand",
+	// "waitFor": "onCreateCommand",
 	"updateContentCommand": "npm install",
-	"postCreateCommand": "",
+	"postCreateCommand": ". ${NVM_DIR}/nvm.sh && nvm install --lts",
 	"postAttachCommand": {
 		"server": "npm run dev"
 	},
 	"customizations": {
 		"codespaces": {
-			"openFiles": ["pages/index.js"]
+			"openFiles": ["pages/index.jsx"]
 		}
 	},
 	"portsAttributes": {
@@ -25,8 +26,7 @@
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
 		"ghcr.io/devcontainers/features/github-cli:1": {},
 		"ghcr.io/devcontainers/features/node:1": {},
-		"ghcr.io/devcontainers/features/powershell:1": {},
-		"ghcr.io/devcontainers-contrib/features/heroku-cli:1": {},
-		"ghcr.io/shyim/devcontainers-features/php:0": {}
+		"ghcr.io/shyim/devcontainers-features/php:0": {},
+		"ghcr.io/devcontainers/features/docker-from-docker:1": {}
 	}
 }
