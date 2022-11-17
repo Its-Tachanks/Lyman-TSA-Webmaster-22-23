@@ -51,10 +51,9 @@ export default function Home() {
 									<h1>Galatech Systems</h1>
 									<ReactTypingEffect
 										text={[
-											"Cock Crushers",
-											"Dick Dingers",
-											"Nut Nullifiers",
-											"Penis Pummelers",
+											"Some cool text",
+											"More cool text",
+											"Even more cool text",
 										]}
 										eraseSpeed="100"
 										typingDelay="1000"
