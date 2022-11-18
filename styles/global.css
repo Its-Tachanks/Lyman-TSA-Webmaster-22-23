@@ -33,7 +33,8 @@
 	--border-color: #6100bb;
 
 	--nav-color: #856dcb;
-	--nav-color-hover: #856dcb;
+	--nav-color-hover: #7045f1;
+	--nav-border-color: #7045f1;
 }
 
 /* Below is a css reset. It fixes some common issues with cross-browser compatibility. */
